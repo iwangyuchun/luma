@@ -65,7 +65,7 @@ function identifyGPUVendor(vendor: string, renderer: string) {
 
 const compiledGlslExtensions = {};
 
-export function canCompileGLGSExtension(gl: WebGLRenderingContext | WebGL2RenderingContext, cap: string, opts: any) {
+export function canCompileGLGSExtension(gl: WebGLRenderingContext | WebGL2RenderingContext, cap: string, opts?: any) {
     //@ts-ignore
     const feature = WEBGL_FEATURES[cap];
     if (!isOldIE(opts)) {
